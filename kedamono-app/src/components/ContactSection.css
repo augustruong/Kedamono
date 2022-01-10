@@ -1,0 +1,32 @@
+.contact-section-container {
+    text-align: center;
+}
+.contact-section-header {
+    margin-bottom: 40px;
+}
+.oo {
+    font-family: 'Roboto';
+    font-weight: 100;
+    font-size: 36px;
+    line-height: 42px;
+    color: #A79708;
+}
+
+.find-us-title {
+    color: #fff;
+    margin: 0 30px;
+}
+.social-media-wrapper {
+    margin-bottom: 80px;
+}
+.fab {
+    color: #fff;
+    font-size: 36px;
+    margin: 0 25px;
+}
+
+.map {
+    width: 100%;
+    height: 375px;
+    background-color: wheat;
+}

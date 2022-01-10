@@ -1,0 +1,44 @@
+.hero-container {
+    background-image: url('../../public/images/top-img.png');
+    background-repeat:no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 78vh;
+    padding-top: 40px;
+    font-family: "Crimson Text";
+}
+
+.hero-container::after {
+    content:'';
+    display: block;
+    position: absolute;
+    background-color: #000;
+    opacity: 0.1;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-container > .logo {
+    height: 30vmin;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.hero-container > .sub-title {
+    font-size: 13px;
+    margin-top: 50px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    padding: 5px 0;
+    z-index: 1;
+}
+
+.hero-container > .catch-copy {
+    font-size: 13px;
+    margin-top: 50px;
+    z-index: 1;
+}

@@ -1,0 +1,46 @@
+.about-section-container {
+    height: 100vh;
+    position: relative;
+}
+.about-content-container {
+    border: 1px solid #fff;
+    outline: 1px solid #fff;
+    outline-offset: 7px;
+    float: left;
+    margin: -35px 0 0 200px;
+    padding: 7px 15px;
+    width: 38vw;
+    height: auto;
+    
+}
+
+.about-img-container {
+    float: right;
+    transform: translate(-100px,250px);
+}
+
+.about-title {
+    margin-top: 10px;
+}
+
+.about-description {
+    margin: 40px 70px 64px 70px;
+}
+
+.about-btn {
+    transform: translateY(-7px);
+    left: 50%;
+    margin-left: -60px;
+    position: absolute;
+    
+}
+
+.line-01{
+    width: 222px;
+    height: 1px !important;
+    transform:  translate(-50%) rotate(90deg);
+    border-top: 1px solid #fff;
+    position: absolute;
+    margin-top: 640px;
+    left: 50%;
+}

@@ -1,0 +1,133 @@
+.event-section-container {
+    padding: 100px 170px;
+}
+.event-section-header {
+    text-align: right;
+    margin-bottom: 80px;
+    padding-right: 10px;
+    border-right: 1px dashed #DED90D;
+}
+
+.event-section-main {
+    display: flex;
+    flex-direction: row;
+}
+
+.event-content-container {
+    margin-top: 70px;
+}
+
+.event-img-container{
+    position: relative;
+}
+
+.event-header-hr {
+    border-bottom: 1px dashed #DED90D;
+    width: 60px;
+    transform: rotate(90deg);
+}
+
+.event-name {
+    font-family: 'Mplus 1p';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 53px;
+}
+
+.long-dashed-hr { 
+    height: 1px;
+    width: 100%;
+    background-image: linear-gradient(90deg, #DED90D, #DED90D 50%, transparent 50%, transparent 100%);
+    background-size: 15px 1px;
+    border: none;
+    margin: 15px 0 25px 0;
+}
+
+.schedule {
+    font-family: 'Roboto';
+    color: #DED90D;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.5em;  
+    margin-top: 20px;
+    margin-bottom: 15px;  
+}
+
+.time-table {
+    border-left: 2px solid #DED90D;
+    margin-left: 60px;
+    padding-left: 40px;
+}
+td {
+    letter-spacing: 0.1em;
+    padding: 5px 20px 5px 0;
+}
+
+.time {
+    font-size: 18px !important;
+}
+
+.event-date {
+    font-family: 'Roboto';
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.5em;
+    color: #DED90D;
+    position: absolute;
+    z-index: 1;
+    transform: translate(210px,35px);
+}
+
+.event-img {
+    width: 436px;
+    height: 436px;
+    position: absolute;
+    transform: translate(80px,55px);
+}
+
+.event-sub-hr {
+    width: 327px;
+    height: 1px !important;
+    border-top: 1px solid #fff;
+    margin: 80px auto 90px auto;
+}
+
+.event-card-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.event-card-wrapper {
+    width: 505px;
+    position: relative;
+}
+
+.event-card-date {
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    color: #DED90D;
+}
+
+.event-card-name {
+    font-family: 'Mplus 1p';
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 36px;
+    margin: 20px 0 15px 0;
+}
+.event-card-description {
+    margin-bottom: 60px;
+}
+.event-btn {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+
+
