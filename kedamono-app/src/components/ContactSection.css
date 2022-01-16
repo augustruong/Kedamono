@@ -1,5 +1,7 @@
 .contact-section-container {
     text-align: center;
+    padding-top: 100px ;
+    padding-bottom: 80px;
 }
 .contact-section-header {
     margin-bottom: 40px;
@@ -17,7 +19,7 @@
     margin: 0 30px;
 }
 .social-media-wrapper {
-    margin-bottom: 80px;
+    padding-bottom: 80px;
 }
 .fab {
     color: #fff;
@@ -25,8 +27,7 @@
     margin: 0 25px;
 }
 
-.map {
-    width: 100%;
-    height: 375px;
-    background-color: wheat;
+.fab:hover {
+    color: #DED90D;
 }
+

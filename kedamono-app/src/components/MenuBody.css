@@ -1,0 +1,142 @@
+.menu-body-container {
+    padding: 120px 180px;
+
+}
+.menu-body-container .menu-main {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 65% auto;       
+}
+.menu-body-container .menu-main .item-pickup-img {
+    position: relative;
+}
+.menu-body-container .menu-main .menu-data {
+    width: 20%;
+    height: 70%;
+    margin-left: 25px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 112px;
+    letter-spacing: 0.5em;
+    color: #DED90D;
+}
+
+.menu-body-container .menu-main .menu-new-label{
+    position: absolute;
+    width: 215px;
+    height: 215px;
+    padding-top: 36px;
+    padding-left: 18px;
+
+    border-radius: 50%;
+    border: 3px dotted #DED90D;
+
+    font-family: 'M PLUS 1';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 70px;
+    letter-spacing: 0.5em;
+    text-align:center;
+    
+    color: #DED90D;
+
+    z-index: 100;
+}
+
+.menu-body-container .menu-main .awamori-main-img{
+    position: absolute;
+    width: 625px;
+    height: 625px;
+    margin-top: -300px;
+    margin-left: 55px;
+    z-index: 99;
+}
+.menu-body-container .menu-main .awamori-shadow-img{
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    margin-top: -280px;
+    margin-left: 84px;
+    z-index: 98;
+}
+
+
+.menu-body-container .menu-main .item-pickup-content{
+    margin-top: 55%;
+}
+
+.item-pickup-content > .item-title{
+    display: inline-block;
+    border-top: 5px double #DED90D;
+    border-bottom: 5px double #DED90D;
+    margin-bottom: 125px;
+    padding-top: 5px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 29px;
+    letter-spacing: 0.24em;
+
+    color: #FFFFFF;
+}
+
+.item-price{
+    font-family: 'M PLUS 1';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 0.15em;
+    line-height: 30px;
+    padding-left: 1;
+    color: rgb(129, 129, 129)
+}
+
+.item-name{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+    color: #DED90D;
+    letter-spacing: 0.15em;
+}
+
+.item-lore{
+    font-family:'M PLUS 1';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 30px;
+    color: #FFFFFF;
+    letter-spacing: 0.1em;
+}
+
+.menu-body-container .menu-favorite {
+    margin-top: 250px;
+}
+.favorite-text{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 28px;
+    letter-spacing: 0.5em;
+    margin-top: 20px;
+    margin-bottom: 80px;
+
+    color: #DED90D;
+}
+
+.list-item-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+}
+
