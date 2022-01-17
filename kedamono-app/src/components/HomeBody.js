@@ -3,6 +3,8 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import Carousel from 'react-elastic-carousel';
 import Item from './Item';
+import EventPost from './EventPost';
+
 import './HomeBody.css'
 
 function HomeBody() {
@@ -79,46 +81,9 @@ function HomeBody() {
                     <p className='section-number'>03</p>
                     <p className='section-title'>OUR EVENTS</p>                
                 </div>
-                <div className='event-main'>
-                    <div className='event-content-container' data-aos="fade-right">
-                        <p className='event-name'>『月夜のケダモノ』もくもく会 第1回</p>
-                        <hr className='long-dashed-hr'/>
-                        <p className='body-text'>
-                            クリエイター同士、バーで開発しながらエンジョイしましょう！<br></br>
-                            Swift でも Ruby でも Unity でも PHPでも、何でも OK です！
-                        </p>
-                        
-                        <div className='schedule-wrapper'>
-                            <p className='schedule'>SCHEDULE</p>    
-                            <table className='time-table'>
-                                <tr>
-                                    <td className='body-text bold time'>11:00 - 11:30</td>
-                                    <td className='body-text'>自己紹介 + テーマ発表</td>
-                                </tr>
-                                <tr>
-                                    <td className='body-text bold time'>11:30 - 13:00</td>
-                                    <td className='body-text'>もくもく</td>
-                                </tr>
-                                <tr>
-                                    <td className='body-text bold time'>13:00 - 14:00</td>
-                                    <td className='body-text'>ランチ</td>
-                                </tr>
-                                <tr>
-                                    <td className='body-text bold time'>14:00 - 18:00</td>
-                                    <td className='body-text'>もくもく</td>
-                                </tr>
-                                <tr>
-                                    <td className='body-text bold time'>18:00 - 19:00</td>
-                                    <td className='body-text'>LT</td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-                    <div className='event-img-container' data-aos="fade-up">
-                        <div className='event-date'>2022.06.01</div>
-                        <img src='./images/whisky.png' className='event-img'/>
-                    </div>
-                </div>
+
+                <EventPost time={"2022.06.01"} title={"『月夜のケダモノ』もくもく会 第1回"}/>
+                    
                 <div className='event-sub'>
                     <hr className='event-sub-hr' data-aos="fade-up"/>
                     <div className='event-card-container' data-aos="fade-up" data-aos-delay="200">

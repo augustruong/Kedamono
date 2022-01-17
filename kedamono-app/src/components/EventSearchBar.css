@@ -1,0 +1,36 @@
+.search-bar-container {
+    position: relative;
+}
+
+.search-bar-hr {
+    border: 2px dotted #DED90D;
+    width: 100vw;
+    margin-left: -180px;
+    margin-top: 22px;
+    position: absolute;
+    z-index: -1;
+}
+
+.search-bar-wrapper {
+    width: 50%;
+    padding: 15px 10px;
+    margin: 100px auto 50px auto;
+    border: 1px solid var(--main-color);
+    background-color: #1F1D1D;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 7% auto;
+}
+
+input[type=text] {
+    background-color: #1F1D1D;
+    border: none;
+    text-align: center;
+    color: #fff;
+    outline: none;
+
+}
+
+.fa-search {
+    color: var(--main-color);
+}
