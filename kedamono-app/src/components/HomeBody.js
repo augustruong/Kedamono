@@ -82,7 +82,7 @@ function HomeBody() {
                     <p className='section-title'>OUR EVENTS</p>                
                 </div>
 
-                <EventPost time={"2022.06.01"} title={"『月夜のケダモノ』もくもく会 第1回"}/>
+                <EventPost time={"2022.06.01"} title={"『月夜のケダモノ』オンラインもくもく会"}/>
                     
                 <div className='event-sub'>
                     <hr className='event-sub-hr' data-aos="fade-up"/>
@@ -90,10 +90,10 @@ function HomeBody() {
                         <div className='event-card-wrapper'>
                             <div className='event-card-content'>
                                 <p className='event-card-date'>2022.06.01</p>
-                                <p className='event-card-name'>『月夜のケダモノ』もくもく会 第1回</p>
+                                <p className='event-card-name'>『月夜のケダモノ』もくもく会 第2回</p>
                                 <p className='event-card-description body-text'>
-                                    クリエイター同士、バーで開発しながらエンジョイしましょう！<br></br>
-                                    Swift でも Ruby でも Unity でも PHPでも、何でも OK です！
+                                クリエイター同士、バーで開発しながらエンジョイしましょう！<br></br>
+                                Swift でも Ruby でも Unity でも PHPでも、何でも OK です！
                                 </p>
                             </div>
                             <button className='btn-see-more event-btn'>もっと見る</button>
@@ -103,7 +103,8 @@ function HomeBody() {
                                 <p className='event-card-date'>2022.01.05</p>
                                 <p className='event-card-name'>新年オンラインもくもく会</p>
                                 <p className='event-card-description body-text'>
-                                    大学の課題をするでもよし、家計簿つけるという溜まった作業をするのもよし！入退室自由です。ご都合の良いタイミングでご参加いただければと思います。
+                                オンラインもくもく会です！今年の抱負や目標などを皆で話しましょう！<br></br>
+                                入退室自由ですご都合の良いタイミングでご参加いただければと思います。
                                 </p>
                             </div>
                             <button className='btn-see-more event-btn'>もっと見る</button>

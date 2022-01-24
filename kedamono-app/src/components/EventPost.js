@@ -3,16 +3,14 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import './EventPost.css'
 
-const EventPost = ({time,title}) => {
+const EventPost = ({time,title,lore1,lore2}) => {
     return (
         <div className='event-post-container'>
             <div className='event-content-wrapper' data-aos="fade-right">
                 <p className='event-name'>{title}</p>
                 <hr className='long-dashed-hr'/>
                 <p className='body-text'>
-                    クリエイター同士、バーで開発しながらエンジョイしましょう！<br></br>
-                    Swift でも Ruby でも Unity でも PHPでも、何でも OK です！
-                </p>
+                           {lore1}<br></br>{lore2}</p>
                         
                 <div className='schedule-wrapper'>
                     <p className='schedule'>SCHEDULE</p>    

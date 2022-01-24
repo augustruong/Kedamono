@@ -1,0 +1,92 @@
+
+
+.hero-title {
+    margin-top:  140px;
+    width: 100%;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: 0.24em;
+
+    color: #FFFFFF;
+}
+
+.content-line {
+    width: 410px;
+    height: 0px;
+    margin:auto;
+
+    border: 2px solid #DED90D;
+}
+
+.content-line2 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50%;
+
+    width: 0px;
+    height: 80px;
+
+    border: 1px dashed #FFFFFF;
+}
+
+.sub-title{
+    font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 30px;
+margin-bottom: 100px;
+/* or 200% */
+
+
+color: #FFFFFF;
+}
+
+.contact-name-wrapper {
+    width: 740px;
+    height: 55px;
+    padding: 15px 10px;
+    margin: 30px auto 0px auto;
+    border: 1px solid var(--main-color);
+    background-color: #1F1D1D;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 7% auto;
+}
+
+.contact-name-wrapper > input{
+    margin: auto;
+    text-align: left;
+    width: 720px;
+}
+
+textarea{
+    resize: none;
+    width: 740px;
+    height: 280px;
+    padding: 15px 10px;
+    margin: 30px auto 0px auto;
+    border: 1px solid var(--main-color);
+    background-color: #1F1D1D;
+    z-index: 1;
+    display: grid;
+    color: #FFFFFF;
+    grid-template-columns: 7% auto;
+}
+
+textarea:focus{
+    outline: none;
+    border: 1px solid var(--main-color);
+}
+
+.submit-button{
+    margin-top: 40px;
+    width: 115px;
+    height: 33px;
+    border: none;
+    background-color: #DED90D;
+}
