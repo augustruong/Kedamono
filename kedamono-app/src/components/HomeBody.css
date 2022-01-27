@@ -2,20 +2,33 @@
     height: 100vh;
     position: relative;
     padding-top: 36px;
+    margin-bottom: 5vw;
 }
 .about-content-container {
     border: 1px solid #fff;
     outline: 1px solid #fff;
     outline-offset: 7px;
     float: left;
-    margin: -35px 0 0 200px;
+    margin: -35px 0 0 12vw;
     padding: 7px 15px;
     width: 38vw;
+    min-width: 520px;
+}
+
+.about-content-container .body-text {
+    margin: 40px 12% 64px 12%;
 }
 
 .about-img-container {
     float: right;
     transform: translate(-100px,250px);
+    width: 35vw;
+    min-width: 375px;
+}
+
+.about-img-container .dear-img {
+    width: 35vw;
+    min-width: 375px;
 }
 
 .about-btn {
@@ -57,6 +70,10 @@
     text-align: center;
 }
 
+.offer-description {
+    width: 100%;
+}
+
 .carousel-container {
     margin-top: 110px;
     width: 90vw;
@@ -96,7 +113,7 @@ button.rec-dot:hover, button.rec-dot:active, button.rec-dot:focus  {
 }
 
 .event-section-container {
-    padding: 50px 170px;
+    padding: 50px 12vw;
 }
 .event-section-header {
     text-align: right;
@@ -148,3 +165,39 @@ button.rec-dot:hover, button.rec-dot:active, button.rec-dot:focus  {
     bottom: 0;
 }
 
+
+@media screen and (max-width: 1200px) {
+    .about-section-container{
+        height: 100%;
+        margin-bottom: 80px;
+    }
+    .about-content-container {
+        float: none;
+        width: 80vw;
+        min-width: 320px;
+        max-width: 720px;
+        margin: 50px auto;
+    }
+    .about-img-container{
+        float: none;
+        transform: none;
+        margin: 0 auto;
+    }
+
+    .offer-description {
+        width: 58vw;
+    }
+
+    .event-card-container {
+        display: block;
+        margin: 0 auto;
+    }
+    .event-card-wrapper {
+        width: 60vw;
+        padding-bottom: 30px;
+    }
+    .event-btn {
+        bottom: 45px;
+    }
+
+}

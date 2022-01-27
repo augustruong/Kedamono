@@ -30,7 +30,7 @@ function HomeBody() {
                     style={{transform: `translateY(${offsetY * 0.1}px)`}} data-aos="fade-up">
                     <p className='section-number'>01</p>
                     <p className='section-title text-center' style={{marginTop: `10px`}}>ABOUT</p>
-                    <p className='body-text' style={{margin: `40px 70px 64px 70px`}}>
+                    <p className='body-text'>
                         クリエイターが集まる会員制バー『月夜のケダモノ』<br/>
                         昼間はオフィスとして、夜はスナックバーとして営業をしております。<br/>
                         「赤羽駅東口」から徒歩4分の駅近<br/>
@@ -39,7 +39,7 @@ function HomeBody() {
                         イベント も開催しているので少しでも興味がありましたら気軽にご参加ください。<br/>
                         店内の雰囲気をもっと知りたい方はこちら Facebook
                     </p>
-                    <button className='btn-see-more about-btn'>もっと見る</button>
+                    {/* <button className='btn-see-more about-btn'>もっと見る</button> */}
                 </div>
             
                 <div className='about-img-container' >
@@ -58,7 +58,7 @@ function HomeBody() {
                             <hr className='offer-border'/>
                         </div>
                     </div>
-                    <p className='body-text text-center' style={{width: `100%`}}>
+                    <p className='offer-description body-text text-center' >
                         缶ビール各種や山崎、響、白州などのウィスキーを取り揃えております。<br></br>
                         アレンジしたカクテルやノンアルコールカクテルもご用意できます。
                     </p>

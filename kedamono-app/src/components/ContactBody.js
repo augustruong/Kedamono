@@ -20,7 +20,7 @@ function ContactBody() {
         <>
         <div className='event-body-container'>
             <div className='hero-content-container'>
-                <p className='hero-title' data-aos="fade-left">CONTACT US</p>
+                <p className='contact-title' data-aos="fade-left">CONTACT US</p>
                 <div className='content-line'></div>
             </div>
             <div className='content-line2' data-aos="fade-bottom"></div>

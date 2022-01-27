@@ -11,6 +11,7 @@
 
 .event-img-wrapper{
     position: relative;
+    min-width: 375px;
 }
 
 .event-header-hr {
@@ -81,3 +82,36 @@ td {
     transform: translate(80px,55px);
 }
 
+@media screen and (max-width: 1100px) {
+    .event-post-container {
+        display: flex;
+        flex-direction: column;
+        /* width: 100%; */
+    }
+    .event-content-wrapper {
+        margin-top: 70px;
+        width: 100%;
+        text-align: left;
+    }
+
+    .event-img-wrapper {
+        height: 500px;
+        /* margin: 0 auto; */
+    }
+    .event-date {
+        font-size: 28px;
+        transform: translate(130px,35px);
+    }
+    
+    .event-img {
+        width: 360px;
+        height: auto;
+        min-width: 3px;
+        max-width: 436px;
+        transform: translate(0vw,55px);
+    }
+}
+
+/* @media screen and (max-width: 960px) {
+
+} */

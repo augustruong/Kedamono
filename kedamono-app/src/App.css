@@ -82,3 +82,10 @@ hr {
   transform: scale(1.1);
   transition: ease-out 0.2s;
 }
+
+@media screen and (max-width: 1200px){
+  .texture {   
+    object-fit: cover;
+    height: 100vh;
+  }
+}
