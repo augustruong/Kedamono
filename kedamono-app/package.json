@@ -2,6 +2,7 @@
   "name": "kedamono-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://augustruong.github.io/Kedamono/",
   "dependencies": {
     "@react-md/icon": "^5.0.0",
     "@testing-library/jest-dom": "^5.16.1",
@@ -27,7 +28,9 @@
     "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts --openssl-legacy-provider build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
