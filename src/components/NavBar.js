@@ -39,16 +39,16 @@ export default class NavBar extends React.Component {
                 </div>
                 <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
                     <li className='nav-item'>
-                        <NavLink to='/' className='nav-link' activeClassName="active" onClick={this.closeMobileMenu}>HOME</NavLink>
+                        <NavLink to='/Kedamono' className='nav-link' activeClassName="active" onClick={this.closeMobileMenu}>HOME</NavLink>
                     </li>
                     <li className='nav-item'>
-                        <NavLink to='/menu' className='nav-link' activeClassName="active" onClick={this.closeMobileMenu}>MENU</NavLink>
+                        <NavLink to='/Kedamono/menu' className='nav-link' activeClassName="active" onClick={this.closeMobileMenu}>MENU</NavLink>
                     </li>
                     <li className='nav-item'>
-                        <NavLink to='/events' className='nav-link' activeClassName="active" onClick={this.closeMobileMenu}>EVENTS</NavLink>
+                        <NavLink to='/Kedamono/events' className='nav-link' activeClassName="active" onClick={this.closeMobileMenu}>EVENTS</NavLink>
                     </li>
                     <li className='nav-item'>
-                        <NavLink to='/contact' className='nav-link' activeClassName="active" onClick={this.closeMobileMenu}>CONTACT</NavLink>
+                        <NavLink to='/Kedamono/contact' className='nav-link' activeClassName="active" onClick={this.closeMobileMenu}>CONTACT</NavLink>
                     </li>
                 </ul>
             </nav>

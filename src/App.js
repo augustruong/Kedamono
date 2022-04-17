@@ -15,11 +15,11 @@ function App() {
         <NavBar />
         <img src={process.env.PUBLIC_URL + '/images/texture.png'} className='texture'/>
         <Routes>
-          <Route path='/' element={<HomePage/>} />
-          <Route path='/about' element={<AboutPage/>} />
-          <Route path='/menu' element={<MenuPage/>} />
-          <Route path='/events' element={<EventPage/>} />
-          <Route path='/contact' element={<ContactPage/>} />
+          <Route path='/Kedamono' element={<HomePage/>} />
+          <Route path='/Kedamono/about' element={<AboutPage/>} />
+          <Route path='/Kedamono/menu' element={<MenuPage/>} />
+          <Route path='/Kedamono/events' element={<EventPage/>} />
+          <Route path='/Kedamono/contact' element={<ContactPage/>} />
         </Routes>
         <p className='copyright'>Copyright © 2021 DHU. All rights reserved.</p>
       </Router>
