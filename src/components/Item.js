@@ -27,7 +27,7 @@ class Item extends Component {
                     <div className='item-img-wrapper'>
                         <div className='item-xline'></div>
                         <div className='item-yline'></div>
-                        <img alt='' src = {this.props.path} className='item-img'></img>
+                        <img src = {process.env.PUBLIC_URL + this.props.path} className='item-img'></img>
                         {(() => {
                             if(this.props.labelName !== ""){
                                 return <p className='item-label'>{this.props.labelName}</p>

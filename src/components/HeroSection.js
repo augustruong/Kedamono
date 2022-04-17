@@ -4,6 +4,8 @@ import "aos/dist/aos.css";
 
 import './HeroSection.css'
 
+// import logo from './logo.svg';
+
 const PageHeroSection = ({ id,title }) => {
     const [offsetY,setOffsetY] = useState(0);
     const handleScroll = () => setOffsetY(window.pageYOffset);
@@ -16,12 +18,12 @@ const PageHeroSection = ({ id,title }) => {
 
         return (
             <div className='hero-container'>
-                <img src={`/images/${id}-hero-img.png`} className="hero-bg" />
+                <img src={process.env.PUBLIC_URL + `/images/${id}-hero-img.png`} className="hero-bg" />
                 {(() => {
                     if(id=="home"){
                         return (
                             <div className='hero-content-container'>
-                                <img src='/images/logo.svg' className="logo" data-aos="fade-down"
+                                <img src={process.env.PUBLIC_URL + '/images/logo.svg'} className="logo" data-aos="fade-down"
                                     style={{transform: `translateY(${offsetY * 0.01}px)`}}/>
                                 <p className='sub-title' data-aos="fade-down"
                                     style={{transform: `translateY(${offsetY * 0.02}px)`}} >TSUKIYO NO KEDAMONO</p>

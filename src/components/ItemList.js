@@ -13,7 +13,7 @@ const ItemList = ({items,loading}) => {
         return (
             <div id='item-list'>
                 {items.map(item => (
-                    <Item name={item.name} price={item.price} path={`./images/menu/${item.id}.png`} 
+                    <Item name={item.name} price={item.price} path={`/images/menu/${item.id}.png`} 
                     dryCount={item.dryCount} labelName={item.labelName} />
                 ))}
             </div>

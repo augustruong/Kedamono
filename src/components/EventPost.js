@@ -43,7 +43,7 @@ const EventPost = ({time,title,lore1,lore2}) => {
             </div>
             <div className='event-img-wrapper' data-aos="fade-up">
                 <div className='event-date'>{time}</div>
-                <img src='./images/event-img.png' className='event-img'/>
+                <img src={process.env.PUBLIC_URL + '/images/event-img.png'} className='event-img'/>
             </div>
         </div>
     )

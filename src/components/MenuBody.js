@@ -21,8 +21,8 @@ function MenuBody() {
             <div className='menu-main'>
                 <div className='item-pickup-img' data-aos="fade-right">
                     <p className='menu-date'>2022 06 02</p>
-                    <img src='/images/lqr_awamori.png' className='awamori-main-img'/>
-                    <img src='/images/lqr_awamori_shadow.png' className='awamori-shadow-img'/>
+                    <img src={process.env.PUBLIC_URL + '/images/lqr_awamori.png'} className='awamori-main-img'/>
+                    <img src={process.env.PUBLIC_URL + '/images/lqr_awamori_shadow.png'} className='awamori-shadow-img'/>
                     <p className='menu-new-label'>発売開始</p>
                 </div>
                 <div className='item-pickup-content'>

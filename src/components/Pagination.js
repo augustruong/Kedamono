@@ -30,7 +30,7 @@ const Pagination = ({itemsPerPage, allItems, paginate, currentPage}) => {
                         <li key={number} className='page-item'>
                             <div className='current-page-wrapper'>
                                 <a onClick={() => paginate(number)} href="javascript:void(0)" onclick="return false" className='page-link'>
-                                    <img src={`./images/moon-pagination/moon-${number%5}.svg`} className='page-icon'/>
+                                    <img src={process.env.PUBLIC_URL + `/images/moon-pagination/moon-${number%5}.svg`} className='page-icon'/>
                                 </a>
                                 {number == currentPage && 
                                     <p className='current-page-no'>{number}</p>

@@ -13,7 +13,7 @@ function App() {
     <>
       <Router>
         <NavBar />
-        <img src='./images/texture.png' className='texture'/>
+        <img src={process.env.PUBLIC_URL + '/images/texture.png'} className='texture'/>
         <Routes>
           <Route path='/' element={<HomePage/>} />
           <Route path='/about' element={<AboutPage/>} />

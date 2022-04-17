@@ -43,7 +43,7 @@ function HomeBody() {
                 </div>
             
                 <div className='about-img-container' >
-                    <img src='/images/dear-head.png' className='dear-img' data-aos="fade-up"/>
+                    <img src={process.env.PUBLIC_URL + '/images/dear-head.png'} className='dear-img' data-aos="fade-up"/>
                 </div>
                 {/* <hr className='line-01' data-aos="fade-up"/> */}
             </div>

@@ -46,7 +46,7 @@ function ContactSection() {
             <div className='map-wrapper'>
                 <div className='mapImg'></div>
                 <div className='location-tag'>
-                    <img src='/images/location-label.png' className='location-label'/>
+                    <img src={process.env.PUBLIC_URL + '/images/location-label.png'} className='location-label'/>
                     <p className='location-text'>
                         〒115-0045<br/> 
                         東京都北区赤羽２丁目１６<br/> 
