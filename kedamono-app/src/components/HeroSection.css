@@ -16,6 +16,30 @@
     position: absolute;
     top: 40px;
     width: 100%;
+    opacity: 40%;
+    -webkit-animation: fade 1s ease-out;
+    -moz-animation: fade 1s ease-out;
+    -o-animation: fade 1s ease-out;
+    animation: fade 1s ease-out;
+}
+
+@keyframes fade {
+    0%{
+        opacity: 100%;
+    }
+    
+    100% {
+        opacity: 40%;
+    }
+}
+
+@-webkit-keyframes fade {
+    0%{
+        opacity: 100%;
+    }
+    100% {
+        opacity: 40%;
+    }
 }
 
 .hero-container .hero-content-container {
@@ -26,16 +50,16 @@
 .hero-container .logo {
     height: 30vmin;
     pointer-events: none;
-    z-index: 1;
+    filter: drop-shadow(3px 5px 10px rgb(0 0 0 / 0.5));
 }
 
 .hero-container .sub-title {
     width: 80%;
-    margin-top: 50px;
     border-top: 1px solid;
     border-bottom: 1px solid;
     padding: 5px 0;
     z-index: 1;
+    margin: 50px auto 0 auto;
 }
 
 .hero-container .catch-copy {
@@ -44,9 +68,8 @@
 }
 
 
-.hero-container  .hero-title {
+.hero-container .hero-title {
     position: absolute;
-    height: 59px;
     left: 13%;
     top: 58%;
 
@@ -55,22 +78,54 @@
     font-size: 48px;
     line-height: 56px;
     letter-spacing: 0.24em;
+    color: #fff;
+    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.5);
     border-bottom: 3px solid #DED90D;
-}
 
-.hero-container .line {
+}
+.long-vert-hr {
     position: absolute;
-    height: 250px;
+    overflow-y: hidden;
+    white-space: nowrap;
+    height: 270px;
+    width: 2.5px;
     left: 337px;
     top: 455px;
-    border: 2px dashed #FFFFFF;
+}
+
+.long-vert-hr hr {
+    height: 270px;
+    width: 2.5px;
+
+    background-image: linear-gradient(to bottom, #fff 15%, rgba(255, 255, 255, 0) 0%);
+    background-position: right;
+    background-size: 2.5px 12px;
+    background-repeat: repeat-y;
+
+    animation: scrollY 8s linear infinite;
+}
+
+.long-vert-hr hr:nth-child(2) {
+    margin-top: -5px;
 }
 
 @media screen and (max-width: 1200px) {
     .hero-container .hero-bg {
         position: absolute;
         top: 0;
-        height: 100vh;
+        height: 80vh;
         object-fit: cover;
+    }
+    .hero-container .hero-title {
+        top: 36%;
+        width: 75%;
+        font-size: 64px;
+        display: inline-block;
+        text-align: left;
+        line-height: 70px;
+        text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.75);
+    }
+    .hero-container .line {
+        display: none;
     }
 }

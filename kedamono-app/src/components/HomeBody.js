@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import Aos from "aos";
 import "aos/dist/aos.css";
-import Carousel from 'react-elastic-carousel';
-import Item from './Item';
 import EventPost from './EventPost';
+import ItemSlider from './ItemSlider'; 
 
 import './HomeBody.css'
+
 
 function HomeBody() {
     const [offsetY,setOffsetY] = useState(0);
@@ -63,17 +63,7 @@ function HomeBody() {
                         アレンジしたカクテルやノンアルコールカクテルもご用意できます。
                     </p>
                 </div>
-                <div className='carousel-container' data-aos="fade-in">
-                    <Carousel  breakPoints={breakPoints} outerSpacing={15} itemPadding={[10,5]} >
-                        <Item/>
-                        <Item/>
-                        <Item/>
-                        <Item/>
-                        <Item/>
-                        <Item/>
-                        <Item/>
-                    </Carousel>
-                </div>
+                <ItemSlider className='slider-container' data-aos="fade-in"/>
             </div>
 
             <div className='event-section-container'>

@@ -41,9 +41,6 @@ export default class NavBar extends React.Component {
                     <li className='nav-item'>
                         <NavLink to='/' className='nav-link' activeClassName="active" onClick={this.closeMobileMenu}>HOME</NavLink>
                     </li>
-                    {/* <li className='nav-item'>
-                        <NavLink to='/about' className='nav-link' activeClassName="active">ABOUT</NavLink>
-                    </li> */}
                     <li className='nav-item'>
                         <NavLink to='/menu' className='nav-link' activeClassName="active" onClick={this.closeMobileMenu}>MENU</NavLink>
                     </li>

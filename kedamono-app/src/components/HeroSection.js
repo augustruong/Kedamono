@@ -31,7 +31,9 @@ const PageHeroSection = ({ id,title }) => {
                     } else return (
                             <div className='hero-content-container'>
                                 <p className='hero-title'>{title}</p>
-                                <div className='line'></div>
+                                <div className='long-vert-hr'>
+                                    <hr/><hr/>
+                                </div>
                             </div>
                         )
                 })()}

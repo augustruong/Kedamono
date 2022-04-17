@@ -1,5 +1,8 @@
-* {
+html {
   box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
   margin: 0;
   padding: 0;
 }
@@ -83,9 +86,42 @@ hr {
   transition: ease-out 0.2s;
 }
 
+.copyright {
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 25px;
+}
+
 @media screen and (max-width: 1200px){
-  .texture {   
-    object-fit: cover;
-    height: 100vh;
+    html,body{
+      overflow-x: hidden;
+      /* overflow-y: hidden; */
+
+    }
+    .texture {   
+      object-fit: cover;
+      height: 100vh;
+      position: fixed;
+    }
+ 
+}
+
+@keyframes scrollY {
+  0% {
+      transform: translateY(-100%);
+  }
+  100% {
+      transform: translateY(0%);
+  }
+}
+
+@keyframes scrollX {
+  0% {
+      transform: translateX(0%);
+  }
+  100% {
+      transform: translateX(-100%);
   }
 }

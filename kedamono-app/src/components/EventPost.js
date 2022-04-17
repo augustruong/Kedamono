@@ -8,7 +8,10 @@ const EventPost = ({time,title,lore1,lore2}) => {
         <div className='event-post-container'>
             <div className='event-content-wrapper' data-aos="fade-right">
                 <p className='event-name'>{title}</p>
-                <hr className='long-dashed-hr'/>
+                <div className='scrollX'>
+                    <hr/>
+                    <hr/>
+                </div>
                 <p className='body-text'>
                            {lore1}<br></br>{lore2}</p>
                         
@@ -40,7 +43,7 @@ const EventPost = ({time,title,lore1,lore2}) => {
             </div>
             <div className='event-img-wrapper' data-aos="fade-up">
                 <div className='event-date'>{time}</div>
-                <img src='./images/whisky.png' className='event-img'/>
+                <img src='./images/event-img.png' className='event-img'/>
             </div>
         </div>
     )

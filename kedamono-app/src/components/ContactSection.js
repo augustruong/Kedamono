@@ -39,9 +39,22 @@ function ContactSection() {
                 </a>                   
             </div>
 
-            <iframe className='map' data-aos="fade-up" 
+            {/* <iframe className='map' data-aos="fade-up" 
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3236.8264816988835!2d139.72079951533107!3d35.77963848017151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60189302be091c43%3A0xa83d798ccb9c592e!2zSmFwYW4sIOOAkjExNS0wMDQ1IFRva3lvLCBLaXRhIENpdHksIEFrYWJhbmUsIDItY2jFjW1l4oiSMTYsIOODkeODvOODoOODk-ODq-i1pOe-vSAzZg!5e0!3m2!1sen!2s!4v1642080078912!5m2!1sen!2s" 
-            style={{border:'0', width: '100%', height: '375px'}} allowfullscreen="" loading="lazy"></iframe>
+            style={{border:'0', width: '100%', height: '375px'}} allowfullscreen="" loading="lazy"></iframe> */}
+
+            <div className='map-wrapper'>
+                <div className='mapImg'></div>
+                <div className='location-tag'>
+                    <img src='/images/location-label.png' className='location-label'/>
+                    <p className='location-text'>
+                        〒115-0045<br/> 
+                        東京都北区赤羽２丁目１６<br/> 
+                        パームビル赤羽３F<br/> 
+                        070-6409-8466
+                    </p>
+                </div>
+            </div>
         </div>
     )
 }

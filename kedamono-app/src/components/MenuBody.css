@@ -1,6 +1,5 @@
 .menu-body-container {
     padding: 120px 180px;
-
 }
 .menu-body-container .menu-main {
     height: 100%;
@@ -10,7 +9,7 @@
 .menu-body-container .menu-main .item-pickup-img {
     position: relative;
 }
-.menu-body-container .menu-main .menu-data {
+.menu-body-container .menu-main .menu-date {
     width: 20%;
     height: 70%;
     margin-left: 25px;
@@ -21,29 +20,43 @@
     line-height: 112px;
     letter-spacing: 0.5em;
     color: #DED90D;
+    
 }
 
 .menu-body-container .menu-main .menu-new-label{
     position: absolute;
-    width: 215px;
-    height: 215px;
-    padding-top: 36px;
+    width: 200px;
+    height: 200px;
+    padding-top: 42px;
     padding-left: 18px;
 
-    border-radius: 50%;
-    border: 3px dotted #DED90D;
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='100' ry='100' stroke='%23DED90DFF' stroke-width='8' stroke-dasharray='10%2c17' stroke-dashoffset='61' stroke-linecap='round'/%3e%3c/svg%3e");
+    border-radius: 100px;
 
     font-family: 'M PLUS 1';
     font-style: normal;
     font-weight: 600;
-    font-size: 48px;
-    line-height: 70px;
+    font-size: 42px;
+    line-height: 60px;
     letter-spacing: 0.5em;
     text-align:center;
     
     color: #DED90D;
-
     z-index: 100;
+
+    animation-name: spin;
+    animation-duration: 17s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
 }
 
 .menu-body-container .menu-main .awamori-main-img{
@@ -68,7 +81,7 @@
     margin-top: 55%;
 }
 
-.item-pickup-content > .item-title{
+.item-pickup-title{
     display: inline-block;
     border-top: 5px double #DED90D;
     border-bottom: 5px double #DED90D;
@@ -106,7 +119,7 @@
     letter-spacing: 0.15em;
 }
 
-.item-lore{
+.item-pickup-lore{
     font-family:'M PLUS 1';
     font-style: normal;
     font-weight: normal;
@@ -126,8 +139,7 @@
     font-size: 26px;
     line-height: 28px;
     letter-spacing: 0.5em;
-    margin-top: 20px;
-    margin-bottom: 80px;
+    margin-top: 50px;
 
     color: #DED90D;
 }
@@ -140,3 +152,69 @@
     position: relative;
 }
 
+@media screen and (max-width: 1200px) {
+    .menu-body-container {
+        padding: 220px auto;
+    }
+
+    .menu-body-container .menu-main {
+        height: 100%;
+        display: block;   
+        margin: 0 auto;
+    }
+
+    .menu-body-container .menu-main .awamori-main-img {
+        width: 500px;
+        height: 500px;
+        margin-top: -230px;
+        margin-left: 30px;
+    }
+
+    .menu-body-container .menu-main .awamori-shadow-img{
+        width: 475px;
+        height: 475px;
+        margin-top: -210px;
+        margin-left: 60px;
+    }
+
+    .menu-body-container .menu-main .menu-date {
+        font-size: 72px;
+        letter-spacing: 0.4em;
+        margin-left: -10px;
+    }
+
+    .menu-body-container .menu-main .menu-new-label{
+        width: 180px;
+        height: 180px;
+        padding-top: 30px;
+        padding-left: 20px;
+    
+        font-size: 40px;
+        line-height: 60px;
+        letter-spacing: 0.4em;
+        margin-left: -20px;
+        margin-top: 30px;
+    }
+
+    .menu-body-container .menu-main .item-pickup-content{
+        margin-top: 320px;
+        text-align: left;
+    }
+    
+    .item-pickup-title{
+        display: inline-block;
+        border-top: 5px double #DED90D;
+        border-bottom: 5px double #DED90D;
+        margin-bottom: 30px;    
+    }
+    
+    .menu-body-container .menu-favorite {
+        margin-top: 150px;
+    }
+}
+
+@media screen and (max-width: 765px) {
+    .menu-body-container {
+        padding: 220px 60px;
+    }
+}

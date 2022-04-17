@@ -1,0 +1,8 @@
+{
+    "posts": [
+        { 
+            "image": 1, 
+            "title": "json-server"
+        }
+    ]
+}

@@ -21,6 +21,7 @@ function App() {
           <Route path='/events' element={<EventPage/>} />
           <Route path='/contact' element={<ContactPage/>} />
         </Routes>
+        <p className='copyright'>Copyright © 2021 DHU. All rights reserved.</p>
       </Router>
       
     </>

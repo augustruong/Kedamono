@@ -1,8 +1,12 @@
-
+.contact-body-container {
+    text-align: center;
+    margin-bottom: 200px;
+}
 
 .contact-title {
+    display: inline-block;
     margin-top:  140px;
-    width: 100%;
+    padding-bottom: 5px;
 
     font-family: Roboto;
     font-style: normal;
@@ -12,42 +16,46 @@
     letter-spacing: 0.24em;
 
     color: #FFFFFF;
+    border-bottom: 2.5px solid #DED90D;
 }
 
-.content-line {
-    width: 410px;
-    height: 0px;
-    margin:auto;
-
-    border: 2px solid #DED90D;
-}
-
-.content-line2 {
+.short-vert-hr {
+    width: 2.5px;
+    height: 100px;
+    overflow-y: hidden;
     margin-top: 50px;
     margin-bottom: 50px;
     margin-left: 50%;
-
-    width: 0px;
-    height: 80px;
-
-    border: 1px dashed #FFFFFF;
 }
 
-.sub-title{
+.short-vert-hr hr {
+    width: 2.5px;
+    height: 100px;
+
+    background-image: linear-gradient(to bottom, #fff 15%, rgba(255, 255, 255, 0) 0%);
+    background-position: right;
+    background-size: 2.5px 12px;
+    background-repeat: repeat-y;
+    animation: scrollY 8s linear infinite;
+    
+}
+
+.short-vert-hr hr:nth-child(2) {
+    margin-top: -5px;
+}
+
+.contact-body-container .sub-title{
     font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 15px;
-line-height: 30px;
-margin-bottom: 100px;
-/* or 200% */
-
-
-color: #FFFFFF;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 30px;
+    margin-bottom: 100px;
+    color: #FFFFFF;
 }
 
-.contact-name-wrapper {
-    width: 740px;
+.contact-input-wrapper {
+    width: 60vw;
     height: 55px;
     padding: 15px 10px;
     margin: 30px auto 0px auto;
@@ -58,16 +66,16 @@ color: #FFFFFF;
     grid-template-columns: 7% auto;
 }
 
-.contact-name-wrapper > input{
+.contact-input-wrapper > input{
     margin: auto;
     text-align: left;
-    width: 720px;
+    width: 55vw;
 }
 
 textarea{
     resize: none;
-    width: 740px;
-    height: 280px;
+    width: 60vw;
+    height: 220px;
     padding: 15px 10px;
     margin: 30px auto 0px auto;
     border: 1px solid var(--main-color);
@@ -89,4 +97,22 @@ textarea:focus{
     height: 33px;
     border: none;
     background-color: #DED90D;
+}
+
+@media screen and (max-width: 640px) {
+    .contact-title {
+        font-size: 38px;
+    }
+    .sub-title {
+        width: 60%;
+        display: inline-block;
+    }
+
+    .contact-input-wrapper {
+        width: 75vw;
+    }
+
+    textarea {
+        width: 75vw;
+    }
 }
