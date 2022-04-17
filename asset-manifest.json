@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Kedamono/static/css/main.517d3f71.css",
+    "main.js": "/Kedamono/static/js/main.3d8c4f93.js",
+    "static/js/787.2d3b24cb.chunk.js": "/Kedamono/static/js/787.2d3b24cb.chunk.js",
+    "static/media/map.png": "/Kedamono/static/media/map.3e93d51bb16369f236a5.png",
+    "static/media/offers-bg.png": "/Kedamono/static/media/offers-bg.940cc49449e28afbb8f8.png",
+    "index.html": "/Kedamono/index.html",
+    "main.517d3f71.css.map": "/Kedamono/static/css/main.517d3f71.css.map",
+    "main.3d8c4f93.js.map": "/Kedamono/static/js/main.3d8c4f93.js.map",
+    "787.2d3b24cb.chunk.js.map": "/Kedamono/static/js/787.2d3b24cb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.517d3f71.css",
+    "static/js/main.3d8c4f93.js"
+  ]
+}
