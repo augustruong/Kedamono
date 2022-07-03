@@ -16,7 +16,7 @@ const EventPost = ({time,title,lore1,lore2}) => {
                            {lore1}<br></br>{lore2}</p>
                         
                 <div className='schedule-wrapper'>
-                    <p className='schedule'>SCHEDULE</p>    
+                    <p className='event-date'>{time}</p>    
                     <table className='time-table'>
                         <tr>
                             <td className='body-text bold time'>11:00 - 11:30</td>
@@ -41,10 +41,9 @@ const EventPost = ({time,title,lore1,lore2}) => {
                     </table>
                 </div>
             </div>
-            <div className='event-img-wrapper' data-aos="fade-up">
-                <div className='event-date'>{time}</div>
-                <img src={process.env.PUBLIC_URL + '/images/event-img.png'} className='event-img'/>
-            </div>
+
+            <img src={process.env.PUBLIC_URL + '/images/event-img.png'} className='event-img' data-aos="fade-up"/>
+
         </div>
     )
 }

@@ -13,7 +13,7 @@
     float: left;
     margin-left: 230px;
     margin-bottom: 5px;
-    width: 40px;
+    width: 30px;
     height: 10px;
     background: #DED90D;
 }
@@ -72,8 +72,8 @@
     margin-top: 20px;
 }
 
-.item-container > .item-price{
-    margin-left: 90px;
+.item-price {
+    text-align: left;
 }
 
 .item-container > .item-name{
@@ -86,19 +86,22 @@
     align-items: center;
 }
 
-.select-button{
-    color: #DED90D;
+.info-btn{
+    color: #fff;
     border-radius: 50%;
     width: 25px;
     height: 25px;
+    padding-top: 2px;
     background-color: #ffffff00;
-    border-color: #DED90D;
-    border-bottom: 1px solid #DED90D;
+    border: 1px solid #fff;
+    text-align: center;
 }
 
-.select-button:hover{
+.info-btn:hover{
     color: #000;
+    font-weight: bolder;
     background-color: #DED90D;
+    border: 1px solid #DED90D;
     cursor: pointer;
 }
 

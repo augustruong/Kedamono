@@ -14,6 +14,11 @@ html {
   font-family: 'Roboto';
 }
 
+@font-face {
+  font-family: SoupOfJustice;
+  src: url("../public/fonts/iCielSoupofJustice.ttf");
+}
+
 .texture {   
   position: fixed;
   top: 0; 
@@ -29,11 +34,12 @@ html {
   width: 100%;
 }
 
-.section-title {
+.title-txt {
   color:  var(--main-color);
-  font-size: 25px;
+  font-size: 32px;
   font-weight: bold;
   letter-spacing: 0.25em;
+  padding-left: 0.25em;
 }
 
 .body-text {
@@ -41,12 +47,23 @@ html {
   font-weight: 300;
   font-size: 15px;
   line-height: 30px;
+  letter-spacing: 0.1em;
 }
+.page-title {
+  display: inline-block;
+  border-top: 5px double #DED90D;
+  border-bottom: 5px double #DED90D;
+  margin: 80px auto 100px auto;
+  padding: 5px;
 
-.section-number {
-  color: var(--second-color);
-  font-size: 36px;
-  font-weight: 200;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 29px;
+  letter-spacing: 0.24em;
+
+  color: #FFFFFF;
 }
 
 .text-center {
@@ -68,20 +85,19 @@ hr {
   align-items: center;
 }
 
-.btn-see-more {
+button {
   background: url('../public/images/label-big-bg.png');
   height: 39px;
-  width: 115px;
+  padding: 0 15px 0 15px;
   border: none;
   font-size: 15px;
   font-weight: 600;
   letter-spacing: 0.25em;
-  padding-left: 0.25em;
   color: #151E35;
   cursor: pointer;
 }
 
-.btn-see-more:hover {
+button:hover {
   transform: scale(1.1);
   transition: ease-out 0.2s;
 }
@@ -108,6 +124,25 @@ hr {
  
 }
 
+@keyframes fade {
+  0%{
+      opacity: 100%;
+  }
+  
+  100% {
+      opacity: 30%;
+  }
+}
+
+@-webkit-keyframes fade {
+  0%{
+      opacity: 100%;
+  }
+  100% {
+      opacity: 30%;
+  }
+}
+
 @keyframes scrollY {
   0% {
       transform: translateY(-100%);
@@ -123,5 +158,30 @@ hr {
   }
   100% {
       transform: translateX(-100%);
+  }
+}
+
+@keyframes wave {
+  0%,100% {
+    clip-path: polygon(0 15%, 10% 15%, 21% 24%, 32% 38%, 43% 55%, 56% 72%, 69% 71%, 82% 55%, 91% 38%, 100% 15%, 100% 100%, 0% 100%);
+  }
+  50% {
+    clip-path: polygon(0 20%, 10% 45%, 20% 63%, 31% 74%, 42% 73%, 55% 54%, 68% 28%, 80% 8%, 89% 7%, 100% 16%, 100% 100%, 0% 100%);
+  }
+  /* 25%,75% {
+    clip-path: polygon(0 37%, 9% 51%, 18% 58%, 31% 48%, 43% 27%, 55% 29%, 67% 57%, 79% 75%, 90% 71%, 100% 56%, 100% 100%, 0% 100%);
+  } */
+}
+
+
+@keyframes blink {
+  0% {
+      filter: drop-shadow(0px 0px 0px rgba(222, 217, 13, 0));
+  }
+  50% {
+      filter: drop-shadow(0px 4px 15px rgba(222, 217, 13, 0.5));
+  }
+  100% {
+      filter: drop-shadow(0px 0px 0px rgba(222, 217, 13, 0));
   }
 }

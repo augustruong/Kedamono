@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react';
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-import './ContactBody.css'
-import ContactSection from './ContactSection';
+import './ContactPage.css'
+import Footer from '../sections/Footer';
 
-function ContactBody() {
+function ContactPage() {
     
     const [offsetY,setOffsetY] = useState(0);
     const handleScroll = () => setOffsetY(window.pageYOffset);
@@ -50,9 +50,9 @@ function ContactBody() {
                 <button className='submit-button'>送信</button>
                 </div>
             </div>
-            <ContactSection/>
+            <Footer/>
         </>
     )
 }
 
-export default ContactBody
+export default ContactPage

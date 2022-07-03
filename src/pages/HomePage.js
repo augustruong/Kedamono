@@ -1,17 +1,15 @@
 import React from 'react';
-import '../../App.css'
-import HeroSection from '../HeroSection';
-import HomeBody from '../HomeBody';
-import ContactSection from '../ContactSection';
-
-
+import '../App.css'
+import HeroSection from '../sections/HeroSection';
+import HomeBody from '../sections/HomeBody';
+import Footer from '../sections/Footer';
 
 function HomePage() {
     return(
         <>
             <HeroSection id={"home"} title={""}/>
             <HomeBody />
-            <ContactSection />
+            <Footer />
         </>
     );
 }

@@ -21,25 +21,7 @@
     -moz-animation: fade 1s ease-out;
     -o-animation: fade 1s ease-out;
     animation: fade 1s ease-out;
-}
-
-@keyframes fade {
-    0%{
-        opacity: 100%;
-    }
-    
-    100% {
-        opacity: 40%;
-    }
-}
-
-@-webkit-keyframes fade {
-    0%{
-        opacity: 100%;
-    }
-    100% {
-        opacity: 40%;
-    }
+    pointer-events:none;
 }
 
 .hero-container .hero-content-container {
@@ -48,41 +30,53 @@
 }
 
 .hero-container .logo {
-    height: 30vmin;
+    width: 20%;
+    min-width: 250px;
     pointer-events: none;
-    filter: drop-shadow(3px 5px 10px rgb(0 0 0 / 0.5));
+    animation: 5s infinite alternate blink;
 }
 
 .hero-container .sub-title {
-    width: 80%;
+    width: 100%;
     border-top: 1px solid;
     border-bottom: 1px solid;
-    padding: 5px 0;
+    padding: 10px 0;
     z-index: 1;
-    margin: 50px auto 0 auto;
+    font-size: 10px;
+    margin: 15px auto 0 auto;
+    letter-spacing: 0.2em;
 }
 
-.hero-container .catch-copy {
+.hero-container .access-btn {
     margin-top: 50px;
-    z-index: 1;
 }
 
+.hero-title-wrapper {
+    position: relative;
+    width: 100vw;
+    text-align: center;
+}
 
-.hero-container .hero-title {
+.hero-title-wrapper .hero-title-img {
+    z-index: 2;
+}
+
+.hero-title-wrapper .hero-title-text {
     position: absolute;
-    left: 13%;
-    top: 58%;
-
-    font-family: Roboto;
-    font-weight: bold;
-    font-size: 48px;
-    line-height: 56px;
-    letter-spacing: 0.24em;
-    color: #fff;
-    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.5);
-    border-bottom: 3px solid #DED90D;
-
+    color: #fffb0052;
+    font-size: 215px;
+    font-family: SoupOfJustice;
+    letter-spacing: 0.01em;
+    z-index: 1;
+    animation: wave 4s ease-in-out infinite;
+    margin-left: auto;
+    margin-right: auto;
+    left: 6px;
+    right: 0;
+    top: 5px;
+    text-align: center;
 }
+
 .long-vert-hr {
     position: absolute;
     overflow-y: hidden;
@@ -116,16 +110,31 @@
         height: 80vh;
         object-fit: cover;
     }
-    .hero-container .hero-title {
-        top: 36%;
-        width: 75%;
-        font-size: 64px;
-        display: inline-block;
+    
+    .hero-container .hero-title-text {
+        width: 592px;
+        height: 321px;
         text-align: left;
-        line-height: 70px;
-        text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.75);
+        font-size: 172px;
+        line-height: 168px;
+        margin-top: -21px;
+        left: 23px;
     }
     .hero-container .line {
         display: none;
     }
+}
+
+@media screen and (max-width: 640px){
+    .hero-title-img {
+        display: none;
+    }
+    .hero-title-wrapper .hero-title-text {
+        color: var(--main-color);
+        font-size: 120px;        
+        animation: none;
+        line-height: 100%;
+        top: 0;
+    }
+    
 }

@@ -50,7 +50,7 @@ class Item extends Component {
                         </div>
 
                         <OutsideClickHandler onOutsideClick = {this.hideInfo}>
-                            <button className='select-button' onClick={this.showInfo}>!</button>
+                            <div className='info-btn' onClick={this.showInfo}>!</div>
                         </OutsideClickHandler>
                     </div>
                

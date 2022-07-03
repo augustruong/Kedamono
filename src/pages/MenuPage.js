@@ -1,16 +1,16 @@
 import React from 'react';
-import '../../App.css'
+import '../App.css'
 
-import HeroSection from '../HeroSection.js'
-import MenuBody from '../MenuBody.js'
-import ContactSection from '../ContactSection';
+import HeroSection from '../sections/HeroSection'
+import MenuBody from '../sections/MenuBody'
+import Footer from '../sections/Footer';
 
 function MenuPage() {
     return(
         <>
             <HeroSection id={"offers"} title={"OUR OFFERS"}/>
             <MenuBody/>
-            <ContactSection/>
+            <Footer/>
         </>
     );
 }

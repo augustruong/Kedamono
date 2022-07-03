@@ -54,7 +54,7 @@ const Pagination = ({itemsPerPage, allItems, paginate, currentPage}) => {
                                 <a className={number == 1 ? 'page-link active-link' : 'page-link'} 
                                     onClick={() => {paginate(number); handleClick(number)}} href="javascript:void(0)" onclick="return false"  activeClassName="active">
                                     <div className={number == 1 ? 'thumb-overlay hidden' : 'thumb-overlay'}></div>
-                                    <img src={`./images/menu/${allItems[number-1].id}.png`} className='page-thumbnail'/>
+                                    <img src={process.env.PUBLIC_URL + `/images/menu/${allItems[number-1].id}.png`} className='page-thumbnail'/>
                                 </a>
                                 {number == currentPage && 
                                     <p className='current-page-no'>{number}</p>

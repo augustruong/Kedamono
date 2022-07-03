@@ -25,10 +25,14 @@ export default class NavBar extends React.Component {
         window.removeEventListener("scroll", this.handleScroll);
     }
     handleScroll = () => {
-        this.setState({
-            scrollPos: document.body.getBoundingClientRect().top,
-            show: document.body.getBoundingClientRect().top > this.state.scrollPos
-        })
+        if (window.innerWidth <= 960) {
+            this.setState({show:true})
+        } else {
+            this.setState({
+                scrollPos: document.body.getBoundingClientRect().top,
+                show: document.body.getBoundingClientRect().top > this.state.scrollPos
+            })
+        }
     }
     
     render() {
@@ -42,13 +46,13 @@ export default class NavBar extends React.Component {
                         <NavLink to='/Kedamono' className='nav-link' activeClassName="active" onClick={this.closeMobileMenu}>HOME</NavLink>
                     </li>
                     <li className='nav-item'>
-                        <NavLink to='/Kedamono/menu' className='nav-link' activeClassName="active" onClick={this.closeMobileMenu}>MENU</NavLink>
+                        <NavLink to='/menu' className='nav-link' activeClassName="active" onClick={this.closeMobileMenu}>MENU</NavLink>
                     </li>
                     <li className='nav-item'>
-                        <NavLink to='/Kedamono/events' className='nav-link' activeClassName="active" onClick={this.closeMobileMenu}>EVENTS</NavLink>
+                        <NavLink to='/events' className='nav-link' activeClassName="active" onClick={this.closeMobileMenu}>EVENTS</NavLink>
                     </li>
                     <li className='nav-item'>
-                        <NavLink to='/Kedamono/contact' className='nav-link' activeClassName="active" onClick={this.closeMobileMenu}>CONTACT</NavLink>
+                        <NavLink to='/contact' className='nav-link' activeClassName="active" onClick={this.closeMobileMenu}>CONTACT</NavLink>
                     </li>
                 </ul>
             </nav>

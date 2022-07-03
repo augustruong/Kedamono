@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import Aos from "aos";
 import "aos/dist/aos.css";
-import EventPost from './EventPost';
-import ItemSlider from './ItemSlider'; 
+import EventPost from '../components/EventPost';
+import ItemSlider from '../components/ItemSlider'; 
+import MapSection from './MapSection';
 
 import './HomeBody.css'
 
@@ -28,8 +29,7 @@ function HomeBody() {
             <div className='about-section-container'>
                 <div className='about-content-container' 
                     style={{transform: `translateY(${offsetY * 0.1}px)`}} data-aos="fade-up">
-                    <p className='section-number'>01</p>
-                    <p className='section-title text-center' style={{marginTop: `10px`}}>ABOUT</p>
+                    <p className='title-txt text-center' style={{marginTop: `10px`}}>ABOUT</p>
                     <p className='body-text'>
                         クリエイターが集まる会員制バー『月夜のケダモノ』<br/>
                         昼間はオフィスとして、夜はスナックバーとして営業をしております。<br/>
@@ -39,40 +39,61 @@ function HomeBody() {
                         イベント も開催しているので少しでも興味がありましたら気軽にご参加ください。<br/>
                         店内の雰囲気をもっと知りたい方はこちら Facebook
                     </p>
-                    {/* <button className='btn-see-more about-btn'>もっと見る</button> */}
                 </div>
             
                 <div className='about-img-container' >
                     <img src={process.env.PUBLIC_URL + '/images/dear-head.png'} className='dear-img' data-aos="fade-up"/>
                 </div>
-                {/* <hr className='line-01' data-aos="fade-up"/> */}
+            </div>
+            
+            <div className='access-section-container text-center'>
+                <div className='access-content-container'>
+                    <div className='access-section-header' data-aos="fade-down">
+                        <div id='access' className='title-wrapper'>
+                            <hr className='title-line'/>
+                            <p className='title-txt'>ACCESS</p>
+                            <hr className='title-line'/>
+                        </div>
+                        <p className='description body-text' >
+                            赤羽駅から徒歩で約７分。赤羽岩淵駅から徒歩で約１０分。
+                        </p>
+                    </div>
+                </div>
+                <MapSection/>
             </div>
 
-            <div className='offer-section-container'>
+
+            <div className='offer-section-container text-center'>
                 <div className='offer-content-container' >
                     <div className='offer-section-header' data-aos="fade-down">
-                        <p className='section-number text-center'>02</p>
-                        <div className='offer-title-wrapper'>
-                            <hr className='offer-border'/>
-                            <p className='section-title' style={{margin: `5px 0`}}>OUR OFFERS</p>
-                            <hr className='offer-border'/>
+                        <div className='title-wrapper'>
+                            <hr className='title-line'/>
+                            <p className='title-txt'>OFFERS</p>
+                            <hr className='title-line'/>
                         </div>
-                    </div>
-                    <p className='offer-description body-text text-center' >
+                        <p className='description body-text' >
                         缶ビール各種や山崎、響、白州などのウィスキーを取り揃えております。<br></br>
                         アレンジしたカクテルやノンアルコールカクテルもご用意できます。
                     </p>
+                    </div>
+                    
                 </div>
                 <ItemSlider className='slider-container' data-aos="fade-in"/>
             </div>
 
-            <div className='event-section-container'>
-                <div className='event-section-header' data-aos="fade-left">
-                    <p className='section-number'>03</p>
-                    <p className='section-title'>OUR EVENTS</p>                
+            <div className='event-section-container text-center'>
+                <div className='event-section-header' data-aos="fade-down">
+                    <div className='title-wrapper'>
+                        <hr className='title-line'/>
+                        <p className='title-txt'>EVENTS</p>
+                        <hr className='title-line'/>
+                    </div>
+                    <p className='description body-text' >
+                        毎月、イベントを行っています。ぜひご参加してください。
+                    </p>              
                 </div>
 
-                <EventPost time={"2022.06.01"} title={"『月夜のケダモノ』オンラインもくもく会"}/>
+                <EventPost time={"2022.06.01"} title={"『月夜のケダモノ』オンラインもくもく会"} lore1={"大学の課題をするでもよし、家計簿つけるなど溜まった作業をするのもよし！"} lore2={"入退室自由です。ご都合の良いタイミングでご参加いただければと思います。"}/>
                     
                 <div className='event-sub'>
                     <hr className='event-sub-hr' data-aos="fade-up"/>
